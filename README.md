@@ -6,6 +6,10 @@ A simple solution for having sections, headers and footers in an Android Recycle
 ```kotlin
 recyclerView.adapter = SRVAdapter(WeakReference(this), WeakReference(this))
 ```
+```kotlin
+//This reloads the adapter if changes have been made.
+srvAdapter.reloadData()
+```
 
 ### DataSrouce setup
 ##### Setup the SRVDataSource by implementing the interface to your Activity.
